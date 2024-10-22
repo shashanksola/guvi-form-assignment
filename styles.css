@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+    margin: 8px;
+}
+
+
+footer {
+    color: white;
+    background-color: rgb(49, 49, 49);
+    padding: 48px;
+}
+
+.platform-content {
+    width: 25vw;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    justify-content: center;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30vw;
+}
+
+.contact-img {
+    height: 40px;
+    width: 40px;
+    margin: 8px;
+    align-self: flex-start;
+}
+
+form {
+    width: 30vw;
+    margin-left: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    padding: 40px;
+}
+
+input {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 36px;
+}
+
+.submit-button {
+    background-color: green;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 8px;
+    height: 36px;
+    font-size: large;
+}
+
+@media only screen and (max-width: 1000px) {
+    #platform {
+        flex-direction: column;
+    }
+
+    .platform-content {
+        width: 100vw;
+    }
+
+    .sub-offers {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 40vw;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-items {
+        width: 70vw;
+    }
+
+    form {
+        width: 70vw;
+    }
+}
